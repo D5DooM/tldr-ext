@@ -1,6 +1,12 @@
 # ⚡ Smart TL;DR — AI Chrome Extension
 
-A modern, fast, and highly customizable browser extension that uses AI to instantly summarize any webpage. Instead of generic walls of text, it detects the type of page you're reading (Job Listing, Article, Product, Research Paper, Video) and outputs perfectly structured, scannable cards.
+### What is it?
+A modern, fast, and highly customizable browser extension that uses AI to instantly summarize any webpage. Instead of generic walls of text, it detects the exact type of page you're reading (Job Listing, Article, Product, Research Paper, Video) and outputs perfectly structured, scannable cards.
+
+### Why does this exist?
+Because the modern web is full of SEO filler, 20-page recipes, long-winded job descriptions, and marketing fluff. We just want the bottom line. Smart TL;DR cuts through the noise and gives you the exact information you actually care about in seconds. 
+
+> ✨ **100% Vibecoded** — Built entirely through vibe-based coding and agentic AI pair programming.
 
 ![Smart TL;DR Demo](icons/icon-128.png)
 

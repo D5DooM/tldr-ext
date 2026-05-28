@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart TL;DR — History</title>
+  <link rel="stylesheet" href="history.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="history-container">
+    <div class="history-header">
+      <div class="header-left">
+        <span class="logo">⚡</span>
+        <h1>Summary History</h1>
+      </div>
+      <div class="header-actions">
+        <input type="text" id="search" placeholder="Search..." class="search-input">
+        <select id="type-filter" class="type-filter">
+          <option value="">All types</option>
+          <option value="JOB">💼 Job</option>
+          <option value="ARTICLE">📰 Article</option>
+          <option value="PRODUCT">🛍️ Product</option>
+          <option value="RESEARCH">🔬 Research</option>
+          <option value="VIDEO">🎬 Video</option>
+          <option value="OTHER">📄 Other</option>
+        </select>
+        <button id="clear-all" class="btn btn-danger">Clear All</button>
+      </div>
+    </div>
+
+    <div id="history-list" class="history-list">
+      <div class="empty-state">Loading...</div>
+    </div>
+  </div>
+
+  <script src="lib/parser.js"></script>
+  <script src="lib/renderer.js"></script>
+  <script src="history.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+/* Minimal external CSS — most styles live inside Shadow DOM in content.js */
+/* This file exists for the manifest content_scripts entry but Shadow DOM handles isolation */
+#tldr-ext-root {
+  all: initial;
+  position: fixed;
+  z-index: 2147483647;
+  pointer-events: none;
+}
+
+#tldr-ext-root * {
+  pointer-events: auto;
+}

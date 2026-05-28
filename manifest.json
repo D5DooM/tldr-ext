@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "Smart TL;DR",
+  "version": "1.0.0",
+  "description": "Auto-summarize any webpage into structured, scannable cards using AI.",
+  "permissions": ["activeTab", "storage", "scripting"],
+  "action": {
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    },
+    "default_title": "Toggle Smart TL;DR"
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["lib/colors.js", "lib/extractor.js", "lib/parser.js", "lib/renderer.js", "content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "options_page": "options.html",
+  "host_permissions": [
+    "https://generativelanguage.googleapis.com/*",
+    "https://api.openai.com/*",
+    "https://api.anthropic.com/*",
+    "http://localhost:11434/*",
+    "http://localhost:1234/*"
+  ]
+}
